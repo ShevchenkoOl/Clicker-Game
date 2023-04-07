@@ -1,45 +1,43 @@
-body {
+.section {
     height: 600px;
-    //overflow: hidden;
-    //background: #2F303A;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/general_background.png");
+    background-image: url('/src/images/1665061142_3-3.jpg');
     background-position: center;
     background-size: cover;
 };
-// .section{
-//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/1665061142_3-3.jpg');
-// };
-.sector {
-//display: block;
+
+.sector 
+{
 max-width: 40%;
 margin-right: auto;
 margin-left: auto;
 margin-top: 20px;
+
 padding-bottom: 10px;
 padding-right: 5px;
+
 align-items: center;
-background: rgb(220,220,220);
+
+background: rgb(220,220,220, 0.8);
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 border-radius: 0.5rem;
+
+border: solid rgb(253, 236, 0);
 };
 
-.form-title{
-margin:0;
-padding: 2rem;
-text-align: center;
-color: #000;
-font-weight: bold;
-font-size: 24px;
+.form-title
+{
+ margin:0;
+ padding: 2rem;
+ text-align: center;
+ color: #000;
+ font-weight: bold;
+ font-size: 24px;
 };
 
-.sector{
-margin-top: 20px;
-padding-top: 20px;
-padding-bottom: 20px;
-border: solid;
-};
 
-.submit{
+.submit
+{
+  display: block;
   padding: 10px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -48,9 +46,8 @@ border: solid;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
-  //margin-right: auto;
-  //margin-left: 250px;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;  
 };
 
   .submit:focus, 
@@ -60,7 +57,8 @@ border: solid;
  };
 
 
-.form-label{
+.form-label
+{
   display: block;
   margin-top:30px;
   margin-bottom: 20px;
@@ -70,16 +68,22 @@ border: solid;
 };
 
 .form-input
-  {display: block;
+{ 
+  display: block;  
   margin-left: auto;
   margin-right: auto;
+
   padding: 10px;
+
   width: 50%;
+
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   cursor: pointer;
-  font-size: 15px;}
+  font-size: 15px;
+}
 
-  .form-input:focus {
+  .form-input:focus
+  {
    outline-color: #2196F3;
-    };
+  };
