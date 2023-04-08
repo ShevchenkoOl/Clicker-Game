@@ -16,20 +16,11 @@ h3 {
     margin: 0;
 }
 
-/*// // ul {
-// //     margin: 0;
-// //     padding-left: 0;
-// // }
-
-// // li {
-// //     display: list-item;
-// // }*/
-
-button {
-    cursor: pointer;
-}
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+ul {
+    list-style-type: none;
+  }

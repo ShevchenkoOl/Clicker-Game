@@ -16,25 +16,16 @@ h3 {
   margin: 0;
 }
 
-/*// // ul {
-// //     margin: 0;
-// //     padding-left: 0;
-// // }
-
-// // li {
-// //     display: list-item;
-// // }*/
-button {
-  cursor: pointer;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .section {
-  height: 600px;
   background-image: url("/src/images/1665061142_3-3.jpg");
   background-position: center;
   background-size: cover;
@@ -75,6 +66,7 @@ button {
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .submit:focus,
@@ -85,7 +77,6 @@ button {
 
 .form-label {
   display: block;
-  margin-top: 30px;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 500;
@@ -106,4 +97,37 @@ button {
 
 .form-input:focus {
   outline-color: #2196F3;
+}
+
+.game-info {
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  background: rgba(220, 220, 220, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.5rem;
+}
+
+.game-page {
+  background-image: url("/src/images/1665061142_3-9.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */

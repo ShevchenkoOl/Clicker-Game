@@ -1,12 +1,10 @@
 .section {
-    height: 600px;
     background-image: url('/src/images/1665061142_3-3.jpg');
     background-position: center;
     background-size: cover;
 };
 
-.sector 
-{
+.sector {
 max-width: 40%;
 margin-right: auto;
 margin-left: auto;
@@ -24,8 +22,7 @@ border-radius: 0.5rem;
 border: solid rgb(253, 236, 0);
 };
 
-.form-title
-{
+.form-title {
  margin:0;
  padding: 2rem;
  text-align: center;
@@ -35,8 +32,7 @@ border: solid rgb(253, 236, 0);
 };
 
 
-.submit
-{
+.submit {
   display: block;
   padding: 10px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -47,7 +43,8 @@ border: solid rgb(253, 236, 0);
   font-size: 16px;
   text-transform: uppercase;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
+  margin-bottom: 20px;
 };
 
   .submit:focus, 
@@ -57,18 +54,15 @@ border: solid rgb(253, 236, 0);
  };
 
 
-.form-label
-{
+.form-label {
   display: block;
-  margin-top:30px;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 500;
   font-size: 20px;
 };
 
-.form-input
-{ 
+.form-input { 
   display: block;  
   margin-left: auto;
   margin-right: auto;
@@ -83,7 +77,6 @@ border: solid rgb(253, 236, 0);
   font-size: 15px;
 }
 
-  .form-input:focus
-  {
+  .form-input:focus {
    outline-color: #2196F3;
   };
