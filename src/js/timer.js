@@ -4,8 +4,9 @@ let seconds = 0;
 let minutes = 0;
 //let hours = 0;
 let clicks = 0;
-let intervalId;
+let intervalId = null;
 let isRunning = false;
+const modal = document.getElementById("#modal");
 
 function displayTime() {
   milliseconds++;

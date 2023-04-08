@@ -14,6 +14,7 @@
 </head>
 
 <body class="game-page">
+<!-----GENERAL-----WINDOW---------------------------->            
         <div class="game-info">
             <ul class="list">
                 <li class="item" id="output">Name:
@@ -30,6 +31,23 @@
                 </li>
             </ul>
         </div>
+
+<!-----MODAL------WINDOW---------------------------->        
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <h2 class="modal-title">YOU WIN!</h2>
+      <ul class="madal-list">
+        <li class="modal-item" id="">You score:
+            <span id="counter"></span>
+        </li>
+        <li class="modal-item">Your time:
+            <span id="timer"></span>
+        </li>
+    </ul>
+    <button type="submit" class="btn">New level</button>
+    </div>
+  </div>
+  
         <script src="src/js/home-page.js" type="module"></script>
         <script src="src/js/counter.js" type="module"></script>
         <script src="src/js/timer.js" type="module"></script>
