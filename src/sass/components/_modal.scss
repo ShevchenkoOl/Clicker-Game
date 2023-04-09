@@ -1,8 +1,24 @@
+.backdrop{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(28, 28, 38, 0.6);
+}
+
 .modal {
-max-width: 40%;
-margin-right: auto;
-margin-left: auto;
-margin-top: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+width: 30%;
+min-height: 300px;
+
+// margin-right: auto;
+// margin-left: auto;
+// margin-top: 20px;
 
 padding-bottom: 10px;
 padding-right: 5px;
@@ -20,9 +36,9 @@ border: solid rgb(253, 236, 0);
  margin:0;
  padding: 2rem;
  text-align: center;
- color: #000;
+ color: #ea0fc5;
  font-weight: bold;
- font-size: 24px;
+ font-size: 34px;
 };
 
 
@@ -38,7 +54,7 @@ border: solid rgb(253, 236, 0);
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-top: 50px;
 };
 
   .btn:focus, 
@@ -52,12 +68,16 @@ border: solid rgb(253, 236, 0);
   }
   
 .modal-item {
+    margin-bottom: 30px;
     flex-grow: 1;
-    margin: 0;
-    padding:0;
     text-align: center;
     color: #000;
     font-weight: bold;
     font-size: 24px;
   }
   
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

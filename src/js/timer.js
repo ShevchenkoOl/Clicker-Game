@@ -6,7 +6,8 @@ let minutes = 0;
 let clicks = 0;
 let intervalId = null;
 let isRunning = false;
-const modal = document.getElementById("#modal");
+const modal = document.querySelector('#modal');
+console.log(modal);
 
 function displayTime() {
   milliseconds++;
@@ -39,11 +40,15 @@ const formattedTime = `${minutes.toString().padStart(2, "0")}:${seconds.toString
     .padStart(2, "0")}`;
     timer.textContent = formattedTime;
 
-    if (clicks >= 30) {
+    if (clicks === 5) {
         clearInterval(intervalId);
         isRunning = false;
+        //addEventListener("click", toggleModal);
+        //modal.style.display = 'block';
+        modal.classList.remove("is-hidden");
       }
 }
+
 window.addEventListener("click", function() {
     if (!isRunning) {
       isRunning = true;
@@ -51,3 +56,18 @@ window.addEventListener("click", function() {
     }
     clicks++;
   });
+
+  // (() => {
+  //   const refs = {
+  //     openModalBtn: document.querySelector("[data-modal-open]"),
+  //     closeModalBtn: document.querySelector("[data-modal-close]"),
+  //     modal: document.querySelector("[data-modal]"),
+  
+  
+  //   refs.openModalBtn.addEventListener("click", toggleModal);
+  //   refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+  //   function toggleModal() {
+  //     refs.modal.classList.toggle("is-hidden");
+  //   }
+  // })();
