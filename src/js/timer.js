@@ -1,18 +1,16 @@
-let timer = document.querySelector('#timer');
+const timer = document.querySelector('#timer');
+const modal = document.querySelector('#modal');
 let milliseconds = 0;
 let seconds = 0;
 let minutes = 0;
-//let hours = 0;
 let clicks = 0;
 let intervalId = null;
 let isRunning = false;
-const modal = document.querySelector('#modal');
-console.log(modal);
 
 function displayTime() {
   milliseconds++;
 
-  if (milliseconds >= 220){
+  if (milliseconds >= 99){
     seconds++;
     milliseconds = 0;
   }
@@ -20,21 +18,7 @@ function displayTime() {
   if (seconds >= 60) {
     minutes++;
     seconds = 0;
-  }
-
-//   if (minutes >= 60) {
-//     hours++;
-//     minutes = 0;
-//   }
-
-//   const formattedTime = `${hours.toString().padStart(2, "0")}:${minutes
-//     .toString()
-//     .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.${milliseconds
-//     .toString()
-//     .padStart(2, "0")}`;
-//     timer.textContent = formattedTime;
-// }
- 
+  } 
 
 const formattedTime = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.${milliseconds.toString()
     .padStart(2, "0")}`;
@@ -43,8 +27,6 @@ const formattedTime = `${minutes.toString().padStart(2, "0")}:${seconds.toString
     if (clicks === 5) {
         clearInterval(intervalId);
         isRunning = false;
-        //addEventListener("click", toggleModal);
-        //modal.style.display = 'block';
         modal.classList.remove("is-hidden");
       }
 }
