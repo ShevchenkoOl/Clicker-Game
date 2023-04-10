@@ -85,7 +85,7 @@ window.addEventListener("click", function() {
     changeBackgroundImage();
   });
 
-  finish.addEventListener('click', function() {
-    //modal.classList.add('is-hidden');
-    window.location.href = '../index.html';
-  });
+  // finish.addEventListener('click', function() {
+  //   //modal.classList.add('is-hidden');
+  //   window.location.href = '../index.html';
+  // });

@@ -26,6 +26,10 @@ ul {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .section {
   background-image: url("/src/images/general_background.png");
   background-position: center;
@@ -186,6 +190,12 @@ ul {
 .btn:hover {
   opacity: 1;
   color: #2196F3;
+}
+
+.btn-link {
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .modal-list {
