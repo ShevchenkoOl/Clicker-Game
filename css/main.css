@@ -215,4 +215,25 @@ a {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.ork {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  animation: movePerson 7s linear forwards;
+}
+
+@keyframes movePerson {
+  from {
+    right: 0;
+  }
+  to {
+    right: 50%;
+    bottom: 20%;
+  }
 }/*# sourceMappingURL=main.css.map */
