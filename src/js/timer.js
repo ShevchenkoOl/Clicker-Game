@@ -10,7 +10,8 @@ const counter = document.querySelector("#counter");
 const closeButton = document.querySelector("#next-level");
 const level = document.querySelector("#level");
 const finish = document.querySelector("#finish");
-const ork = document.querySelector(".ork");
+const orks = document.querySelectorAll(".ork");
+// const orkContainer = document.querySelector("#animation");
 
 const images = [
   "./src/images/background-1.jpg",
@@ -55,7 +56,7 @@ function displayTime() {
     .padStart(2, "0")}.${milliseconds.toString().padStart(2, "0")}`;
   timer.textContent = formattedTime;
 
-  if (clicks % 5 === 0) {
+  if (clicks % 15 === 0) {
     clearInterval(intervalId);
     isRunning = false;
     modal.classList.remove("is-hidden");
@@ -73,14 +74,16 @@ function changeBackgroundImage() {
   changeAnimationImage();
 }
 
+
 function changeAnimationImage() {
   const randomIndex = Math.floor(Math.random() * animation.length);
   const animationUrl = animation[randomIndex];
-  const animationElement = document.querySelector("#animation");
+  const animationElement = document.querySelector(".ork");
   animationElement.src = animationUrl;
 }
 
-ork.addEventListener("click", function () {
+orks.forEach((ork) => {
+  ork.addEventListener("click", () => {
   
   if (!modal.classList.contains("is-hidden")) {
     return;
@@ -91,6 +94,7 @@ ork.addEventListener("click", function () {
     intervalId = setInterval(displayTime, 1);
   }
   counter.textContent = `${(clicks += 1)}`;
+});
 });
 
 closeButton.addEventListener("click", function () {

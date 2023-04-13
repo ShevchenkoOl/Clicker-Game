@@ -1,5 +1,5 @@
 .section {
-  background-image: url("../src/images/1665061152_3-10.jpg");
+  background-image: url("../src/images/background-general.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -21,6 +21,35 @@ border-radius: 0.5rem;
 
 border: solid rgb(253, 236, 0);
 };
+
+.title{
+  position: relative;
+  font-family: 'IM Fell English', serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.title::after {
+  content: attr(title);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.title:hover::after {
+  opacity: 1;
+}
 
 .form-title {
  margin:0;
