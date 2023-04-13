@@ -13,19 +13,19 @@ const finish = document.querySelector("#finish");
 const ork = document.querySelector(".ork");
 
 const images = [
-  "/src/images/background-1.jpg",
-  "/src/images/background-2.jpg",
-  "/src/images/background-3.jpg",
-  "/src/images/background-4.jpg",
-  "/src/images/background-5.jpg"
+  "./src/images/background-1.jpg",
+  "./src/images/background-2.jpg",
+  "./src/images/background-3.jpg",
+  "./src/images/background-4.jpg",
+  "./src/images/background-5.jpg"
 ];
 
 const animation = [
-  "/src/images/ork-1.png",
-  "/src/images/ork-2.png",
-  "/src/images/ork-3.png",
-  "/src/images/ork-4.png",
-  "/src/images/ork-5.png"
+  "./src/images/ork-1.png",
+  "./src/images/ork-2.png",
+  "./src/images/ork-3.png",
+  "./src/images/ork-4.png",
+  "./src/images/ork-5.png"
 ];
 
 let milliseconds = 0;
