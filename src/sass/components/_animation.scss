@@ -6,17 +6,17 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    animation: movePerson 7s linear forwards;
+    // animation: movePerson 7s linear forwards;
   }
-  @keyframes movePerson {
-    from {
-      right: 0;
-    }
-    to {
-      right: 50%;
-      bottom: 20%;
-    }
-  }
+  // @keyframes movePerson {
+  //   from {
+  //     right: 0;
+  //   }
+  //   to {
+  //     right: 50%;
+  //     bottom: 20%;
+  //   }
+  // }
 
 
   

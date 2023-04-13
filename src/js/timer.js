@@ -1,3 +1,7 @@
+const output = document.querySelector('#output');
+const name = localStorage.getItem('name');
+output.textContent = name;
+
 const timer = document.querySelector("#timer");
 const modal = document.querySelector("#modal");
 const timeResult = document.querySelector("#timeResult");
@@ -96,7 +100,8 @@ closeButton.addEventListener("click", function () {
   changeAnimationImage();
 });
 
-finish.addEventListener('click', function() {
+finish.addEventListener('click', (e) => {
+  e.preventDefault();
   //modal.classList.add('is-hidden');
-  window.location.href = "/index.html";
+  window.location.href = 'index.html';
 });

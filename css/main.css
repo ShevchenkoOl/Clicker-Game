@@ -225,15 +225,26 @@ a {
   position: fixed;
   bottom: 0;
   right: 0;
-  animation: movePerson 7s linear forwards;
 }
 
-@keyframes movePerson {
-  from {
-    right: 0;
-  }
+.spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
   to {
-    right: 50%;
-    bottom: 20%;
+    transform: rotate(360deg);
   }
+}
+.hidde {
+  display: none !important;
 }/*# sourceMappingURL=main.css.map */
